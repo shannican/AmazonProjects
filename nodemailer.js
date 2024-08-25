@@ -10,7 +10,7 @@ const REFRESH_TOKEN =`1//041bf7EWGDtAMCgYIARAAGAQSNwF-L9IrP8O0Axc_39DkCvIgIZIpZx
 const authClient = new googleApis.google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET,REDIRECT_URI);
 authClient.setCredentials({refresh_token: REFRESH_TOKEN});
 
-
+// shanni kant
 async function mailer(user,otpstring,userid){
    console.log(user)
  try{
