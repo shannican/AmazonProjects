@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/verified.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <img id="img1" src="../images/photo-1522780550166-284a0288c8df (1).jpg" alt="">
+            <img id="img2" src="../images/photo-1508160371440-9220afde27ca.jpg" alt="">
+            <img id="img3" src="../images/photo-1624521793559-136bfe16fc86.jpg" alt="">
+            <img id="img4" src="../images/photo-1633174524827-db00a6b7bc74.jpg" alt="">
+            <img id="img5" src="../images/f0c19d77156181.5c7f78e7dfc74.png" alt="">
+        </div>
+        <div id="right">
+            <h1>Verify Your Account</h1>
+            <p>Please enter your details to Verify</p>
+            <form action="/verified" method="post" >
+                <div id="input">
+                    <input name="fname" type="text" placeholder="First Name"value="<%=user.fname %>">
+                </div>
+                <div id="input">
+                    <input name="lname" type="text" placeholder="Last Name" value="<%= user.lname %>">
+                </div>
+                <div id="input">
+                    <input name="proffession" type="text" placeholder="proffession" value="<%= user.proffession %>">
+                </div>
+                <div id="input">
+                    <input name="age" type="text" placeholder="Age" value="<%= user.age %>">
+                </div>
+                <div id="input">
+                    <input name="birth" type="text" placeholder="Date of Birth" value="<%= user.birth %>">
+                </div>
+                <div id="input">
+                    <input name="gstin" type="text" placeholder="GSTIN No." value="<%=user.gdtin %>">
+                </div>
+                <div id="input">
+                    <input name="contact" type="text" placeholder="Mobile No." value="<%= user.contact %>">
+                </div>
+                <div id="input">
+                    <input name="address" type="text" placeholder="Address" value="<%= user.address %>">
+                </div>
+                <input id="verify-btn" type="submit" value="Verify">
+            </form>
+        </div>
+    </div>
+    <script src="../javascripts/verified.js"></script>
+</body>
+</html>

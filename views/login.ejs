@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="dp">
+                <img src="../images/default.png" alt="">
+            </div>
+            <h1>Member Login</h1>
+            <form action="/login" method="post">
+                <div id="email-input">
+                    <label class="label" for="email"><i class="ri-user-fill"></i></label>
+                    <input name="email" type="email" placeholder="enter your email" >
+                </div>
+                <div id="password-input">
+                    <label class="label" for="password"><i class="ri-lock-fill"></i></label>
+                    <input name="password" type="password" placeholder="password" >
+                </div>
+                <div id="confirmation">
+                    <div id="checkbox">
+                        <input id="check" type="checkbox" name="check" value="form">
+                        <label for="check">Remember me</label>
+                    </div>
+                    <a target="_blank" href="/forgot">Forgot password</a>
+                </div>
+                <input id="submit-btn" type="submit" value="Login">
+            </form>
+             <div id="signup-link">
+                Don't have an account? <a href="/register">Sign up</a>
+             </div>
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</body>
+</html>

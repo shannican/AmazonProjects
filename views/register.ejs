@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/register.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="img">
+                <img src="../images/stolen_logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div id="right">
+            <h2>Register</h2>
+            <h4>Manage all your lottery efficiently</h4>
+            <p>Let's you all set up so you can verify your personal account and brgin <br>setting up your profile.</p>
+            <form action="/register" method="post">
+                <div class="input">
+                    <label for="">First Name*</label>
+                    <input name="fname" type="text">
+                </div>
+                <div class="input">
+                    <label for="">Last Name</label>
+                    <input name="lname" type="text">
+                </div>
+                <div class="input">
+                    <label for="">Mobile Number*</label>
+                    <input name="contact" type="text">
+                </div>
+                <div class="input">
+                    <label for="select">Choose One*</label>
+                    <select class="select" name="isSeller">
+                        <option selected>Choose One</option>
+                        <option value="1">Normal user</option>
+                        <option value="2">Seller</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="">Email*</label>
+                    <input name="email" type="email">
+                </div>
+                <div class="input">
+                    <label for="">New Password*</label>
+                    <input name="password" type="password">
+                </div>
+                <div id="checkbox">
+                    <input id="check" type="checkbox" name="check" value="form">
+                    <label style="margin-bottom: 20px; margin-left:20px;" for="checkbox">Yes, I want to recieve Lottery Display Emails</label>
+                </div>
+                <div id="checkbox" style="margin-top: -25px;">
+                    <input id="check" type="checkbox" name="check" value="form">
+                    <label style="margin-bottom: 20px; margin-left:20px;" for="checkbox">Yes, I agree to all The <a href="">Terms</a> and <a href="">Privacy Policy</a></label>
+                </div>
+                <input id="submit-btn" type="submit" value="Create Account">
+                <div id="signup">Already have an account? <a href="/login">Sign in</a></div>
+                <a href="" id="submit-btnn"> Sign up with google</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#left{
+    position: relative;
+    width: 62%;
+    height: 100%;
+    background-color: aquamarine;
+}
+#left img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#img2{
+    opacity: 0;
+    z-index: 9;
+    transition: 0.3s;
+}
+#img3{
+    opacity: 0;
+    z-index: 99;
+    transition: 0.3s;
+
+}
+#img4{
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 999;
+}
+#img5{
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 9999;
+}
+#right{
+    position: relative;
+    width: 38%;
+    height: 100%;
+    background-color:rgb(238, 244, 250);
+}
+#right h1{
+    font-family: "Aeonik";
+    font-weight: 500;
+    margin-top: 8%;
+    margin-left: 24%;
+    position: relative;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+#right p{
+    position: relative;
+    font-family: "Aeonik"; 
+    margin-left: 31%;
+    margin-top: 8px;
+    word-spacing: -1px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.532);
+}
+form{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 55%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+#input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+input{
+    padding: 6px 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+    outline: none;
+}
+#verify-btn{
+    font-family: "Aeonik";
+    width: 40%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 115px;
+    margin-top: 12%;
+}

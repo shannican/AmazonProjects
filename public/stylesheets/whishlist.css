@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.cart-btnn {
+  position: absolute;
+  width: 52px;
+  height: 39px;
+  /* background-color: red; */
+  z-index: 9;
+  top: 2%;
+  right: 7%;
+  text-decoration: none;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.258);
+  color: rgba(0, 0, 0, 0.589);
+}
+.cart-btnn:focus {
+  outline: rgba(0, 0, 0, 0.614) solid 5px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+}
+#stolen-logo {
+  position: relative;
+  width: 170px;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  /* background-color: red; */
+  padding-right: 50px;
+  left: -8%;
+}
+#stolen-logo img {
+  width: 150%;
+  height: 110%;
+  object-fit: cover;
+}
+#main h1 {
+  position: relative;
+  top: 15px !important;
+  margin-left: 30px;
+  font-family: "Aeonik";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.799);
+}
+#conatiner {
+  position: relative;
+  margin-top: -10px;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  /* overflow: hidden !important; */
+}
+#products {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+#prod-text {
+  position: absolute;
+  font-family: "Aeonik";
+  font-size: 23px;
+  text-transform: uppercase;
+  left: 45%;
+  letter-spacing: 2px;
+}
+#allproduct::-webkit-scrollbar {
+  display: none;
+}
+#allproduct {
+  /* background-color: red; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-shrink: 0;
+  padding-left: 34px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+.cards {
+  position: relative;
+  width: 18vw;
+  min-height: 65vh;
+  /* background-color: red; */
+  border-radius: 5px;
+  overflow: hidden;
+  top: 0%;
+}
+.cards .img .whislist {
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  /* background-color: blue; */
+  right: 2%;
+  top: 1%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .img .whislist a {
+  text-decoration: none;
+  color: black;
+}
+.cards .img .whislist i {
+  position: relative;
+  font-size: 30px;
+}
+.cards .img {
+  position: relative;
+  width: 100%;
+  height: 49vh;
+  background-color: black;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cards .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.cards .img #img1 {
+  position: absolute;
+  z-index: 9;
+  opacity: 1;
+  transition: 0.3s;
+  left: 0%;
+}
+.cards .img #img2 {
+  position: absolute;
+  z-index: 99;
+  left: 100%;
+  /* opacity: 0; */
+  transition: 0.3s;
+}
+.cards .img #img3 {
+  position: absolute;
+  z-index: 999;
+  left: 100%;
+  /* opacity: 0; */
+  transition: 0.3s;
+}
+.cards .img #img4 {
+  position: absolute;
+  z-index: 999;
+  /* opacity: 0; */
+  left: 100%;
+  transition: 0.3s;
+}
+.product-name {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-transform: capitalize;
+  font-family: "Aeonik";
+  margin-top: 8px;
+  padding-left: 5px;
+}
+.description {
+  position: relative;
+  width: 100%;
+  min-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  text-transform: capitalize;
+  font-family: "Aeonik";
+  margin-top: 3px;
+  padding-left: 5px;
+  line-height: 15px;
+  font-size: 17px;
+  /* background-color: blue; */
+}
+/* #main::-webkit-scrollbar{
+    display: none;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  } */
+.price {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-family: "Aeonik";
+  padding: 0 5px;
+  padding-top: 5px;
+  margin-top: -5px;
+  font-weight: 500;
+}
+.button {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.button a {
+  padding: 2px 12px;
+  background-color: tomato;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.button a h5 {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.button a:nth-child(2) {
+  padding: 3px 12px;
+  margin-left: 3px;
+}
+.button a i {
+  font-size: 18px;
+}
+#home {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+}
+#home a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+#profile {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#profile a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+#product-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#product-link a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+
+#cart-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#cart-link a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+#wislist-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#wislist-link a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+
+#logout-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(61, 61, 61, 0.92);
+  width: 100%;
+  height: 30px;
+  /* background-color: #fe2fd1; */
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#logout-link a {
+  font-family: "Aeonik";
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.92);
+  margin-left: 18px;
+}
+#cart-cards {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid rgba(0, 0, 0, 0.575);
+  border-radius: 10px;
+  margin-top: 20px;
+  /* gap: 20px; */
+}
+#cart-cards #img-box {
+  position: relative;
+  width: 32%;
+  height: 100%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cart-cards #img-box #image {
+  position: relative;
+  width: 85%;
+  height: 83%;
+  border-radius: 10px;
+  border: 1px solid black;
+  /* background-color: red; */
+  overflow: hidden;
+  padding: 5px 5px;
+}
+#cart-cards #img-box #image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+#cart-cards #content-box {
+  position: relative;
+  width: 67%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  padding-top: 15px;
+  /* background-color: #fe2fd1; */
+}
+#cart-cards #content-box .productName {
+  position: relative;
+  width: 90%;
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.productName h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#cart-cards #content-box .productDesc {
+  position: relative;
+  width: 90%;
+  /* background-color: green; */
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 5px;
+  line-height: 17px;
+  margin-top: 2px;
+}
+#cart-cards #content-box .productDesc p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(36, 36, 36);
+}
+#cart-cards #content-box .productPrice {
+  padding-right: 20px;
+  position: relative;
+  width: 90%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+  height: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+#cart-cards #content-box .productPrice p {
+  font-weight: 500;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+#cart-cards #content-box .productPrice p:nth-child(2) {
+  color: tomato;
+  text-decoration: line-through;
+  font-size: 17px;
+  padding: 1px 8px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+#cart-cards #content-box .productButton {
+  position: relative;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 17px;
+}
+#buy-btn {
+  position: relative;
+  padding: 5px 10px;
+  background-color: blue;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-family: "Aeonik";
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+#whishlist-btn {
+  position: relative;
+  padding: 5px 10px;
+  background-color: tomato;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-family: "Aeonik";
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#delete-cart {
+  position: relative;
+  padding: 1px 8px;
+  /* background-color: rgb(255, 246, 244); */
+  font-size: 20px;
+  text-decoration: none;
+  /* color: white; */
+  color: rgba(0, 0, 0, 0.603);
+  font-family: "Aeonik";
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-left: 60px;
+  border-radius: 0%;
+  border: 0.4px solid rgba(0, 0, 0, 0.235);
+  font-weight: 700;
+  border-radius: 5px;
+}
+.offcanvas-body::-webkit-scrollbar {
+  display: none;
+}
