@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 var passportLocalMongoose = require('passport-local-mongoose');
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://127.0.0.1:27017/stolen")
+mongoose.connect(process.env.MONGODB_URL)
 .then(function(){
   console.log("connected to server")
 })
